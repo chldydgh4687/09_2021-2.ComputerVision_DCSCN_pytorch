@@ -25,6 +25,8 @@ def main():
 
     DATA_DIR = ['data/bsd200', 'data/yang91']
     OUTPUT_DIR = 'augmented_data/train_org/'
+
+    utils.SR_FOLDER_GENERATE()
     expected_totalaug = multiprocessing_aug(DATA_DIR,OUTPUT_DIR)
 
     # Split Parameters
@@ -69,11 +71,11 @@ def main():
         avg_loss = 0.0
         batch_num = 0
         for LR,HR,BI in data_loader:
+            optimizer.zero_grad()
             recon = MODEL(LR.to(device))
             recon += BI.to(device)
             loss = loss_func(recon, HR.to(device))
 
-            optimizer.zero_grad()
             loss.backward()
             optimizer.step()
 

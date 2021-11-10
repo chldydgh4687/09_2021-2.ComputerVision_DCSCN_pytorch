@@ -17,11 +17,12 @@ def multiprocessing_aug(DATA_DIR,OUTPUT_DIR):
             file_num += 1
 
     total_auglen = len(file_list)*8
-    print("LIST UP COMPLETED!!")
+    print(len(file_list)," LIST UP COMPLETED!!")
 
     pool = Pool(NUM_CPU)
     pool.map(augment_data,file_list)
     pool.close()
     pool.join()
 
+    print("augmentation done..!!")
     return total_auglen

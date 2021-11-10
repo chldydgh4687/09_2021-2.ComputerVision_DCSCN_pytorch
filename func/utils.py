@@ -5,6 +5,34 @@ import imageio
 from glob import glob
 import torch
 
+def SR_FOLDER_GENERATE():
+    aug_output = 'augmented_data/train_org/'
+    sr_data = "augmented_data/train_sr"
+    hr = "augmented_data/train_sr/HR"
+    lrbi = "augmented_data/train_sr/LRBICUBIC"
+    lrx2 = "augmented_data/train_sr/LRX2"
+
+    try:
+        os.mkdir(aug_output)
+    except:
+        pass
+    try:
+        os.mkdir(sr_data)
+    except:
+        pass
+    try:
+        os.mkdir(hr)
+    except:
+        pass
+    try:
+        os.mkdir(lrbi)
+    except:
+        pass
+    try:
+        os.mkdir(lrx2)
+    except:
+        pass
+
 def progressing_bar(count,length):
     if (float(count) / float(length) * 100) % 10.0 == 0:
         print("split progressing : {} {}/{}".format(round(float(count) / float(length) * 100),count,length))
