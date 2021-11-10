@@ -4,6 +4,15 @@
 ## Introduction
 ![image](https://user-images.githubusercontent.com/11037567/137428754-da0497d6-4d09-4ef4-9ba3-0c753b4e9a2e.png)
 
+---
+
+## Set Up Environments
+- Windows / pytorch-nightly
+- RTX 3090 
+- anaconda3(python3.8)
+
+---
+
 ## Submission Making
 빠른 제출을 위해 제출용코드 제공하고 있습니다.
 1. sumbission_making/submission_image 풀더에 있는 원본 이미지를 삭제하고, SET5의 복원된 이미지를 넣는다. 
@@ -36,9 +45,6 @@ python test.py
 ![image](https://user-images.githubusercontent.com/11037567/137428827-80f0f665-617d-48cf-b140-c6952f9cd1ed.png)
  
 ---
-### Environments
-- Windows / pytorch-nightly
-- RTX 3090 
 
 ### Reference
 [1] J.Yamanaka et al, "Fast and Accurate Image Super Resolution by Deep CNN with Skip Connection and Network in Network"  
