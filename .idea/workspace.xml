@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff135015-e6f8-46a9-90e2-75baa4539fff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Git_images/1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Git_images/2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Git_images/model.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/save_model/DCSCN_V2_e100_lr0.0001.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/submission_making/submission_image/img_001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/submission_making/submission_image/img_002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/submission_making/submission_image/img_003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/submission_making/submission_image/img_004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/submission_making/submission_image/img_005.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/2021-2.ComputerVision_DCSCN_pytorch.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCSCN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DCSCN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/func/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/func/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/save_model/DCSCN_V2_e9_lr0.0001.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

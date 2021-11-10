@@ -12,8 +12,8 @@ from tqdm import tqdm
 def main():
     # Checking GPU Available
 
-    # splited 된 그림을 보길 원하시면 1 로 바꾸시면 됩니다.
-    # 경로 : augmented/train_sr
+    # splited 된 그림을 보길 원하시면 batch_picture_save_flag 를 1 로 바꾸시면 됩니다.
+    # 경로 : augmented_data/train_sr
     batch_picture_save_flag = 0
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
     os.environ["CUDA_VISIBLE_DEVICES"] = "0"
