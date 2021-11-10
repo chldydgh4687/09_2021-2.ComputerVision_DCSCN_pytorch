@@ -37,7 +37,7 @@ python test.py
  
 ---
 ### Environments
-- Windows / pytorch
+- Windows / pytorch-nightly
 - RTX 3090 
 
 ### Reference
