@@ -37,9 +37,9 @@ def progressing_bar(count,length):
     if (float(count) / float(length) * 100) % 10.0 == 0:
         print("split progressing : {} {}/{}".format(round(float(count) / float(length) * 100),count,length))
 
-def build_data(train_list,batch_size, scale, BICUBIC_DIR, LRX2_DIR, HR_DIR):
+def build_data(train_list,batch_size, scale, BICUBIC_DIR, LRX2_DIR, HR_DIR,pic_save):
 
-    save_flag = 0
+    save_flag = pic_save
 
     stride = batch_size // scale
     hr_stride = batch_size
@@ -78,6 +78,10 @@ def build_data(train_list,batch_size, scale, BICUBIC_DIR, LRX2_DIR, HR_DIR):
                 hr_filename = HR_DIR + '/' + str(hr_batch_number).zfill(6) + '.png'
                 lr_filename = LRX2_DIR + '/' + str(lr_batch_number).zfill(6) + '.png'
                 bi_filename = BICUBIC_DIR + '/' + str(bi_batch_number).zfill(6) + '.png'
+
+                print(hr_filename)
+                print(lr_filename)
+                print(bi_filename)
 
                 hr_batch_number += 1
                 lr_batch_number += 1

@@ -114,9 +114,3 @@ class DCSCN(nn.Module):
         re_out = self.reconv(up_out)
         return re_out
 
-
-# if __name__ == "__main__" :
-#     model = DCSCN()
-#     a = torch.randn([20,1,32,32])
-#     print(a.shape)
-#     print(model(a).shape)

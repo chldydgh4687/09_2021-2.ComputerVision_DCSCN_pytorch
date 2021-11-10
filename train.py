@@ -12,6 +12,9 @@ from tqdm import tqdm
 def main():
     # Checking GPU Available
 
+    # splited 된 그림을 보길 원하시면 1 로 바꾸시면 됩니다.
+    # 경로 : augmented/train_sr
+    batch_picture_save_flag = 0
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
     os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
@@ -38,7 +41,7 @@ def main():
     lr_batch_size = 32
     scale = 2
     train_list = utils.load_img(OUTPUT_DIR,expected_totalaug)
-    HR_LIST, LR_LIST, BI_LIST = utils.build_data(train_list, lr_batch_size, scale, BICUBIC_DIR, LRX2_DIR, HR_DIR)
+    HR_LIST, LR_LIST, BI_LIST = utils.build_data(train_list, lr_batch_size, scale, BICUBIC_DIR, LRX2_DIR, HR_DIR, batch_picture_save_flag)
 
     # TORCH BATCH DATASET
     batch_size = 20
@@ -62,7 +65,7 @@ def main():
 
 
     lr = 1e-4
-    total_epochs = 11
+    total_epochs = 1000
     model_path = 'save_model'
     optimizer = optim.Adam(MODEL.parameters(),lr = lr)
     loss_func = torch.nn.MSELoss().to(device)
@@ -71,11 +74,12 @@ def main():
         avg_loss = 0.0
         batch_num = 0
         for LR,HR,BI in data_loader:
-            optimizer.zero_grad()
+
             recon = MODEL(LR.to(device))
             recon += BI.to(device)
             loss = loss_func(recon, HR.to(device))
 
+            optimizer.zero_grad()
             loss.backward()
             optimizer.step()
 
@@ -88,9 +92,9 @@ def main():
 
 
         avg_loss = avg_loss / total_batch_num
-        print("Epoch {}/{} loss {}".format(epochs, total_epochs, avg_loss))
+        print("Epoch {}/{} loss {}".format(epochs+1, total_epochs, avg_loss))
         if epochs % 10 == 0:
-            save_model_path = model_path + "/DCSCN_V2_e{}_lr{}_loss{:4}.pt".format(epochs,lr,loss)
+            save_model_path = model_path + "/DCSCN_V2_e{}_lr{}_loss{:4}.pt".format(epochs+1,lr,loss)
             torch.save(MODEL, save_model_path)
 
             print("SAVE MODEL EPOCH {}".format(epochs))
@@ -98,10 +102,10 @@ def main():
 
     # Last save
 
-    save_model_path = model_path + "/DCSCN_V2_e{}_lr{}.pt".format(epochs, lr)
+    save_model_path = model_path + "/DCSCN_V2_e{}_lr{}.pt".format(epochs+1, lr)
     torch.save(MODEL, save_model_path)
 
-    print("LAST SAVE MODEL EPOCH {}".format(epochs))
+    print("LAST SAVE MODEL EPOCH {}".format(epochs+1))
 
 
 if __name__ == "__main__":
