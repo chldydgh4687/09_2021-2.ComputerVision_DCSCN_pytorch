@@ -17,9 +17,11 @@
 - Image_batch_size(Low Resolution size) = 32
 - Batch_size = 20
 - Scale_factor = 2
-- Learning rate = 1e-4, epochs = 10
+- Learning rate = 1e-4, epochs = 1000
 - Loss : MSEloss, Optimizer : Adam
 ```shell
+# 생성되는 splited 된 luma 영상을 보길 원하시면 train.py의 batch_picture_save_flag를 1 로 바꾸시면 됩니다.
+# 저장 경로 : augmented_data/train_sr
 python train.py
 ```
 ![image](https://user-images.githubusercontent.com/11037567/137428803-233efc3c-d790-4511-bb5e-47805b6fa31b.png)
