@@ -13,15 +13,19 @@
 
 ---
 
-## Submission Making [[필독이슈]](https://github.com/chldydgh4687/09_2021-2.ComputerVision_DCSCN_pytorch/issues/1)
+## Submission Making
 빠른 제출을 위해 제출용코드 제공하고 있습니다.
 
 - SET5는 이미지 화질 개선 테스크에서 5개의 테스트 데이터셋입니다!
+- SET5의 순서와 동일하도록 submission_image 풀더에 넣어주세요!
+<p align="center">
+  <img width="417" alt="3634646346" src="https://user-images.githubusercontent.com/11037567/141294974-247af649-e3e8-4085-8cb4-a8efd2b459ef.png">
+</p>
+
 1. sumbission_making/submission_image 풀더에 있는 원본 이미지를 삭제하고, SET5의 복원된 이미지를 넣는다. 
-2. $python make_submission.py
-3. "submit.json" 이름으로 파일이 생성된다
-4. $python check_submission.py 
-5. 오류없이 shape가 동일하게 맞아떨어지면 리더보드에 제출한다.
+2. $python make_submission.py 
+3. "submit.json" 이름으로 파일이 생성된다 (오류가 나면 해당 파일이 삭제됩니다. 오류가 나면 복원된 영상 5개가 풀더 안에 들어가있는지, SET5와 순서가 동일한지 확인해보세요.)
+
   
 ---
 
