@@ -15,6 +15,8 @@
 
 ## Submission Making
 빠른 제출을 위해 제출용코드 제공하고 있습니다.
+[공지참고](https://github.com/chldydgh4687/09_2021-2.ComputerVision_DCSCN_pytorch/issues/1)
+- SET5는 이미지 화질 개선 테스크에서 5개의 테스트 데이터셋입니다!
 1. sumbission_making/submission_image 풀더에 있는 원본 이미지를 삭제하고, SET5의 복원된 이미지를 넣는다. 
 2. $python make_submission.py
 3. "submission.json" 이름으로 파일이 생성되고 리더보드에 제출한다.
