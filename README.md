@@ -23,8 +23,9 @@
 </p>
 
 1. sumbission_making/submission_image 풀더에 있는 원본 이미지를 삭제하고, SET5의 복원된 이미지를 넣는다. 
-2. $python check_submission.py 
-3. "submit.json" 이름으로 파일이 생성된다 (오류가 나면 해당 파일이 삭제됩니다.)
+2. $python make_submission.py 
+3. "submit.json" 이름으로 파일이 생성된다 (오류가 나면 해당 파일이 삭제됩니다. 오류가 나면 복원된 영상 5개가 풀더 안에 들어가있는지, SET5와 순서가 동일한지 확인해보세요.)
+
   
 ---
 
