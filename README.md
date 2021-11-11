@@ -19,7 +19,7 @@
 - SET5는 이미지 화질 개선 테스크에서 5개의 테스트 데이터셋입니다!
 1. sumbission_making/submission_image 풀더에 있는 원본 이미지를 삭제하고, SET5의 복원된 이미지를 넣는다. 
 2. $python make_submission.py
-3. "submission.json" 이름으로 파일이 생성되고 리더보드에 제출한다.
+3. "submit.json" 이름으로 파일이 생성되고 리더보드에 제출한다.
   
 ---
 
