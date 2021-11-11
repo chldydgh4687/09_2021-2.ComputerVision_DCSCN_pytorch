@@ -5,7 +5,7 @@ import numpy as np
 from collections import OrderedDict
 
 target_folder = 'submission_image'
-output_file = 'bicubic.json'
+output_file = 'submit.json'
 
 set5_json = OrderedDict()
 
