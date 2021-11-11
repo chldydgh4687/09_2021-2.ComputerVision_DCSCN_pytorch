@@ -13,7 +13,7 @@
 
 ---
 
-## Submission Making [[]](https://github.com/chldydgh4687/09_2021-2.ComputerVision_DCSCN_pytorch/issues/1)
+## Submission Making [[필독이슈]](https://github.com/chldydgh4687/09_2021-2.ComputerVision_DCSCN_pytorch/issues/1)
 빠른 제출을 위해 제출용코드 제공하고 있습니다.
 
 - SET5는 이미지 화질 개선 테스크에서 5개의 테스트 데이터셋입니다!
