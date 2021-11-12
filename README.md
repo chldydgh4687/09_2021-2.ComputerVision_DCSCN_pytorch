@@ -26,8 +26,10 @@
 2. $python make_submission.py 
 3. "submit.json" 이름으로 파일이 생성된다 (오류가 나면 해당 파일이 삭제됩니다. 오류가 나면 복원된 영상 5개가 풀더 안에 들어가있는지, SET5와 순서가 동일한지 확인해보세요.)
 
+- 정상적으로 Submit.json 이 생성된 모습
   
----
+---<img width="329" alt="235235253" src="https://user-images.githubusercontent.com/11037567/141408883-78bc2324-aced-4ee5-bddc-57865e3117f6.PNG">
+
 
 ## Train
 - Train_Data: ( bsd200 + yang91 ) * 8 (augmentation)
