@@ -28,8 +28,9 @@
 
 - 정상적으로 Submit.json 이 생성된 모습
   
----<img width="329" alt="235235253" src="https://user-images.githubusercontent.com/11037567/141408883-78bc2324-aced-4ee5-bddc-57865e3117f6.PNG">
+<img width="329" alt="235235253" src="https://user-images.githubusercontent.com/11037567/141408883-78bc2324-aced-4ee5-bddc-57865e3117f6.PNG">
 
+--- 
 
 ## Train
 - Train_Data: ( bsd200 + yang91 ) * 8 (augmentation)
