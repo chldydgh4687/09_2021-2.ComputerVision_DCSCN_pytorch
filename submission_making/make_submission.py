@@ -15,7 +15,7 @@ target_folder = 'submission_image'
 main_file = "Fixed_Submit/bicubic.json"
 set5_json = OrderedDict()
 
-for i,img_path in enumerate(glob(target_folder+'/*')):
+for i,img_path in enumerate(sorted(glob(target_folder+'/*'))):
     img = imageio.imread(img_path)
     set5_json[str(i)] = img.tolist()
 
