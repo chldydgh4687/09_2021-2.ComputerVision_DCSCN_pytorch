@@ -59,7 +59,7 @@ else:
     exit()
 
 if np.array(org_["1"]).shape == np.array(json_data["1"]).shape:
-    print("bicubic_ {} submit_ {} same!!".format(np.array(org_["1"]).shape, np.array(json_data["0"]).shape))
+    print("bicubic_ {} submit_ {} same!!".format(np.array(org_["1"]).shape, np.array(json_data["1"]).shape))
 else:
     print("ERROR : bicubic_ {} submit_ {} different size..!".format(np.array(org_["1"]).shape, np.array(json_data["1"]).shape))
     print("check images order between submission_image and SET5 folder!")
